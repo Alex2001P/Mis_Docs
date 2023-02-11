@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subir archivos al servidor</title>
+    <style>
+        span {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Subir todos los archivos al servidor</h1>
+    <?php
+        error_reporting(E_ALL ^ E_WARNING ^ E_NOTICE);
+        if($_GET["file"] == "correct"){
+            echo "<span>El archivo se envio con exito.</span><br>";
+        }
+    ?>
+    <form name="files_form" action="subirArchivo.php" method="post" enctype="multipart/form-data">
+        <input type="file" name="files_fls" id="">
+        <br><br>
+        <input type="submit" value="Enviar">
+    </form>
+    <h1>Subir un archivo ICO al servidor</h1>
+    <?php
+        error_reporting(E_ALL ^ E_WARNING ^ E_NOTICE);
+        if($_GET["ico"] == "correct"){
+            echo "<span>El archivo se envio con exito.</span><br>";
+        }
+        if($_GET["ico"] == "error"){
+            echo "<span>No se ha podido subir el archivo. El tipo de archivo permitido es ico.</span><br>";
+        }
+    ?>
+    <form name="file_ico_form" action="subirArchivoICO.php" method="post" enctype="multipart/form-data">
+        <input type="file" name="file_ico" id="">
+        <br><br>
+        <input type="submit" value="Enviar">
+    </form>
+    <h1>Subir un archivo jpg al servidor</h1>
+    <?php
+        error_reporting(E_ALL ^ E_WARNING ^ E_NOTICE);
+        if($_GET["jpg"] == "correct"){
+            echo "<span>El archivo se envio con exito.</span><br>";
+        }
+        if($_GET["jpg"] == "error"){
+            echo "<span>No se ha podido subir el archivo. El tipo de archivo permitido es jpg.</span><br>";
+        }
+    ?>
+    <form name="file_jpg_form" action="subirArchivoJPG.php" method="post" enctype="multipart/form-data">
+        <input type="file" name="file_JPG" id="">
+        <br><br>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+
+</html>

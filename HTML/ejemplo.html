@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Title of the document</title>
+  <link rel="shortcut icon" type="image/png" href="spider.png">
+  <style>
+    * {
+      margin: 5px;
+      padding: 0;
+      list-style-type: none;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: url('https://images.unsplash.com/photo-1532210317995-cc56d90177d9?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80') center;
+      background-size: cover;
+      min-height: 600px;
+      font-family: 'Helvetica Neue', sans-serif;
+    }
+
+    nav {
+      text-align: center;
+    }
+
+    .menu {
+      display: inline-block;
+    }
+
+    .menu>li {
+      float: left;
+      color: #e298e1;
+      width: 140px;
+      height: 40px;
+      line-height: 40px;
+      background: rgba(0, 0, 0, 0.7);
+      cursor: pointer;
+      font-size: 17px;
+    }
+
+    .sub-menu {
+      transform: scale(0);
+      transform-origin: top center;
+      transition: all 300ms ease-in-out;
+    }
+
+    .sub-menu li {
+      font-size: 14px;
+      background: rgba(0, 0, 0, 0.8);
+      padding: 8px 0;
+      color: white;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+      transform: scale(0);
+      transform-origin: top center;
+      transition: all 300ms ease-in-out;
+    }
+
+    .sub-menu li:last-child {
+      border-bottom: 0;
+    }
+
+    .sub-menu li:hover {
+      background: black;
+    }
+
+    .menu>li:hover .sub-menu li {
+      transform: scale(1);
+    }
+
+    .menu>li:hover .sub-menu {
+      transform: scale(1);
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <ul class="menu">
+      <li>
+        Italia
+        <ul class="sub-menu">
+          <li>Rme</li>
+          <li>Mil
+            an</li>
+          <li>Venice</li>
+          <li>Lacio</li>
+          <li>Florence</li>
+        </ul>
+      </li>
+      <li>
+        Francia
+        <ul class="sub-menu">
+          <li>Paris</li>
+          <li>Bordeau</li>
+          <li>Marseille</li>
+          <li>Toulouse</li>
+        </ul>
+      </li>
+      <li>
+        Espana
+        <ul class="sub-menu">
+          <li>Madrid</li>
+          <li>Valencia</li>
+          <li>Barcelona</li>
+          <li>Seville</li>
+          <li>Bilbao</li>
+        </ul>
+      </li>
+      <li>
+        Russia
+        <ul class="sub-menu">
+          <li>Moscow</li>
+          <li>Saint Petersburg</li>
+          <li>Tula</li>
+          <li>Chekhov</li>
+        </ul>
+      </li>
+      <li>
+        Germany
+        <ul class="sub-menu">
+          <li>Berlin</li>
+          <li>Munich</li>
+          <li>Frankfurt</li>
+          <li>Hamburg</li>
+          <li>Dresden</li>
+        </ul>
+      </li>
+      <li>India
+        <ul class="sub-menu">
+          <ul>
+            <a href="login form.html">login form</a></ul>
+          <li>bgsf</li>
+
+          <li>Mumbai</li>
+          <li>
+            <a href="Wallpaper.jpg">Bhopal</a></li>
+          <li>Vidisha</li>
+          <li>Bhadora</li>
+        </ul>
+      </li>
+
+    </ul>
+  </nav>
+</body>
+
+</html>
