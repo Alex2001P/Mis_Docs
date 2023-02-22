@@ -13,3 +13,29 @@ table, th, td{
             font-size: 14;
             font-family: 'Times New Roman';
         }
+
+                        /* BUTTON */
+        /* COMO HACER DESPLEGABLE MI MENU Y RESPONSIVO */
+
+        header{
+            width: 100;
+            padding: 1em;
+        }
+            h3{
+               background-color: rgb(9, 140, 233);
+            }
+            a{}
+            
+            button{
+                background-color: crimson;
+            }
+            svg{
+                width: 6em;
+                width: 6em;
+            }
+            
+            nav{}
+            ul{}
+            li{}
+        
+
