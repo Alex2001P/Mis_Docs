@@ -10,11 +10,29 @@ table, th, td{
         padding: 20px;
         font-size: 20;
         font-family: 'Times New Roman';
+        text-align: center;
+        font-size: 20px;
     }
 
+        .form-cointaner{
+            max-width: 400px;
+        }
+
         body{
+            background-image: url(D:\PROGRAMAS\VISUALSTUDIO\Mis_Docs\Proyecto\IMAG\P1.jpg);
+            background-size: cover;
+            background-position: center;
             font-size: 14;
             font-family: 'Times New Roman';
+            color: #333;
+        }
+
+        container {
+            max-width: 800ppx;
+            margin: 0 auto;
+            pad: 20px;
+            background-color: white;
+            opacity: 0.9;
         }
 
                 /* Evitamos problemas con las imagenes */
